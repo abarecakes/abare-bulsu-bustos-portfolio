@@ -1,5 +1,117 @@
-<center>
-<img src="new.png" width="100%"/>
-<br/>
-<img src="ceu_codecamp.jpg"/>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .about {
+            text-align: center;
+            padding: 20px;
+        }
+        .about h1 {
+            background: purple;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+        .about h1:hover {
+            background: #6a0dad;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+            transition: transform 0.3s ease;
+        }
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+        .contact, .skills {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+        .contact:hover, .skills:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .contact ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact li {
+            margin: 10px 0;
+            transition: color 0.3s ease;
+        }
+        .contact li:hover {
+            color: #ffd700;
+        }
+        .skills h2 {
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+            transition: border-bottom 0.3s ease;
+        }
+        .skills h2:hover {
+            border-bottom: 2px solid #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="about">
+            <h1>About me</h1>
+            <div class="profile">
+                <img src="abare.jpg" alt="Profile Picture">
+                <p>Hi! My name is Mark Justin Abare. I am a UI/UX Designer based in Bulacan,Philippines...</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: example@gmail.com</li>
+                <li>LinkedIn: linkedin.com/in/example</li>
+                <li>Behance: behance.net/example</li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <div class="education">
+                <h2>Education</h2>
+                <p>FPT University - Graphic Design (2020 - Now)</p>
+            </div>
+            <div class="technical-skills">
+                <h2>Technical Skills</h2>
+                <p>Adobe Photoshop, Illustrator, Premiere Pro, After Effects...</p>
+            </div>
+            <div class="soft-skills">
+                <h2>Soft Skills</h2>
+                <p>Teamwork, Communication, Critical Thinking...</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
